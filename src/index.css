@@ -54,8 +54,8 @@
   .text-gradient-custom {
     background: linear-gradient(
       162.92deg,
-      rgba(147, 242, 77, 0.9) 11.75%,
-      rgba(85, 140, 45, 0.27) 89.07%
+      rgba(147, 242, 77, 0.9) 21.75%,
+      rgba(85, 140, 45, 0.27) 99.07%
     );
 
     -webkit-background-clip: text;

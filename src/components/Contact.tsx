@@ -24,7 +24,7 @@ const contactCol2 = [
 
 function Contact() {
   return (
-    <section className="p-8 m-5 flex flex-col md:flex-row md:justify-around gap-6 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 sm:max-w-8/10 sm:mx-auto md:max-w-full">
+    <section className="py-8 px-12 m-5 flex flex-col md:flex-row md:justify-around gap-6 rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 sm:max-w-8/10 sm:mx-auto md:max-w-full">
       <h1 className="font-etna text-2xl md:text-4xl text-center">Contact Us:</h1>
       {/* First Column */}
       <div className="space-y-3">

@@ -35,14 +35,14 @@ const forgeComparison = [
 
 function WhyForge() {
   return (
-    <section className="relative p-5 flex flex-col items-center justify-center gap-6 md:max-w-4xl mx-auto">
+    <section className="relative p-5 flex flex-col items-center justify-center gap-6 sm:max-w-8/10 md:max-w-4xl mx-auto">
       <Button />
-      <q className="font-aArbeiBerry text-3xl sm:text-4xl md:text-5xl text-center my-8">
+      <q className="font-aArbeiBerry text-3xl sm:text-4xl md:text-5xl text-center my-8 md:my-12">
         If you're looking for{" "}
         <span className="text-green">a sign, this is </span>it.
       </q>
-      <RadialGlow className="hidden md:block top-1/6 z-0" />
-      <h2 className="font-etna text-4xl md:text-5xl lg:text-6xl md:mb-4 z-10">Why Forge</h2>
+      <RadialGlow className="hidden md:block top-1/5 z-0" />
+      <h2 className="font-etna text-4xl md:text-5xl lg:text-6xl md:mb-6 z-10">Why Forge</h2>
       <div className="flex flex-col md:flex-row gap-6 mx-auto">
         {forgeComparison.map((section, index) => (
           <div

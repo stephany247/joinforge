@@ -38,7 +38,7 @@ function Highlights() {
         .
       </q>
       {/* features section  */}
-      <ul className="grid gap-6 md:grid-cols-2">
+      <ul className="grid md:grid-cols-2 gap-6 md:gap-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center gap-4">
             <div className="bg-green p-3 rounded-lg text-white">
@@ -49,7 +49,7 @@ function Highlights() {
                 className="text-black"
               />
             </div>
-            <h4 className="text-lg font-light font-geist bg-clip-text text-transparent bg-[linear-gradient(163.73deg,_#FFFFFF_-53.91%,_rgba(255,_255,_255,_0.2)_144.68%)]">
+            <h4 className="text-lg md:text-xl font-light font-geist bg-clip-text text-transparent bg-[linear-gradient(163.73deg,_#FFFFFF_-53.91%,_rgba(255,_255,_255,_0.2)_144.68%)]">
               {feature.title}
             </h4>
           </li>
