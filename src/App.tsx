@@ -6,11 +6,14 @@ import ForgeKids from "./components/ForgeKids";
 import WhyForge from "./components/WhyForge";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { StaggeredFade } from "./components/StaggeredText";
 
 function App() {
   return (
-    <div className=" my-10 space-y-8 md:max-w-9/10 lg:max-w-5xl mx-auto">
+    <div className=" my-10 space-y-8 md:max-w-9/10 lg:max-w-6xl mx-auto">
       <Header />
+{/* <StaggeredFade text="Staggered Fade" /> */}
+      
       <Hero />
       <Highlights />
       <ForgeKids />

@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
+
 function Button({ className = "" }) {
   return (
-    <div className={`bg-border-gradient size-fit p-0.25 rounded-full flex items-center justify-center ${className}`}>
-      <a className="text-sm md:text-xl bg-fancy-gradient py-3.5 md:py-4 px-4 md:px-8 rounded-full text-center">
+    <motion.div
+    initial={{ opacity: 0, y: 20, scale: 0.8 }}
+    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+    transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
+    viewport={{ once: true, amount: 0.2 }} className={`bg-border-gradient size-fit p-0.25 rounded-full flex items-center justify-center ${className}`}>
+      <a className="text-sm md:text-lg bg-fancy-gradient py-3.5 md:py-4 px-4 md:px-8 rounded-full text-center">
         Claim Your Spot [Limited Early Access]
       </a>
-    </div>
+    </motion.div>
   );
 }
 
