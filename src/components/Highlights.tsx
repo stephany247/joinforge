@@ -2,7 +2,6 @@ import { Icon } from "@iconify/react";
 import Button from "./Button";
 import RadialGlow from "./RadialGlow";
 import { motion } from "framer-motion";
-import FadeIn from "./FadeInText";
 import FadeInText from "./FadeInText";
 
 const features = [

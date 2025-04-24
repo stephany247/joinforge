@@ -1,7 +1,6 @@
 import Button from "./Button";
 import { Icon } from "@iconify/react";
 import RadialGlow from "./RadialGlow";
-import FadeIn from "./FadeInText";
 import { motion } from "framer-motion";
 import FadeInText from "./FadeInText";
 
@@ -19,8 +18,6 @@ const forgeComparison = [
       "No self defence skill, zero fighting experience.",
     ],
     showCheck: false,
-    // wrapperClass: "", // Regular card
-    // innerClass: "", // No inner bg
     wrapperClass: "p-[0.5px] md:p-0.25 rounded-2xl z-10 w-full",
     innerClass:
       "border border-border backdrop-blur-lg bg-[radial-gradient(146.13%_118.42%_at_50%_-15.5%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.16)_100%)] rounded-2xl p-6 w-full h-full",
@@ -79,7 +76,6 @@ function WhyForge() {
               <h3 className="text-xl font-etna mb-6">{section.title}</h3>
               <ul className="space-y-5 list-disc pl-5">
                 {section.items.map((item, idx) => (
-                  // <FadeIn></FadeIn>
                   <motion.li
                   key={idx}
                   custom={idx}

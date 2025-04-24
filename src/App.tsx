@@ -6,7 +6,6 @@ import ForgeKids from "./components/ForgeKids";
 import WhyForge from "./components/WhyForge";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { StaggeredFade } from "./components/StaggeredText";
 
 function App() {
   return (

@@ -1,6 +1,5 @@
 import forgeKids1 from "../assets/forge-kids1.jpg";
 import forgeKids2 from "../assets/forge-kids2.jpg";
-import FadeIn from "./FadeInText";
 import { TypingEffect } from "./typing-effect";
 
 function ForgeKids() {
@@ -10,7 +9,6 @@ function ForgeKids() {
         Introducing 
         <br className="block sm:hidden"/>
         <TypingEffect text="FORGEKIDS" className="text-green sm:ml-4" />
-        {/* <span className="text-green">FORGEKIDS</span> */}
       </h2>
       <p className="font-medium md:font-semibold text-lg sm:text-xl max-w-2xl mx-auto">
         All kids deserve their first black belt. Teach your kids resilience,
