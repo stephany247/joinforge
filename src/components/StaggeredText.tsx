@@ -33,7 +33,7 @@ export const StaggeredFade: React.FC<TextStaggeredFadeProps> = ({
       className={className}
     >
       {letters.map((word, i) => (
-        <motion.span key={`${word}-${i}`} variants={variants} custom={i}>
+        <motion.span key={`${word}-${i}`} variants={variants} custom={i} className="inline-block">
           {word}
         </motion.span>
       ))}

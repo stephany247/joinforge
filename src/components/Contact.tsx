@@ -5,10 +5,12 @@ const contactCol1 = [
   {
     icon: "fluent:mail-48-regular",
     text: "joinforge.hq@gmail.com",
+    href: "mailto:joinforge.hq@gmail.com", // Email link
   },
   {
     icon: "mdi:phone-outline",
     text: "+234 807 8205 271",
+    href: "tel:+2348078205271", // Phone link
   },
 ];
 
@@ -16,10 +18,12 @@ const contactCol2 = [
   {
     icon: "hugeicons:instagram",
     text: "joinforge.hq",
+    href: "https://www.instagram.com/joinforge.hq?igsh=aXZieXZuMW5uNHVm", // Instagram link
   },
   {
     icon: "hugeicons:new-twitter-rectangle",
     text: "joinforge_hq",
+    href: "https://x.com/joinforge_hq?s=21&t=2UwXgm9psHxQmocbxUcwKw", // Twitter link
   },
 ];
 
@@ -38,24 +42,30 @@ function Contact() {
       {/* First Column */}
       <div className="space-y-3">
         {contactCol1.map((item, index) => (
-          <div key={index} className="flex items-center gap-2 md:gap-4">
+          <a
+            key={index}
+            href={item.href}
+            className="flex items-center gap-2 md:gap-4 font-light md:text-xl text-wrap"
+          >
             <Icon icon={item.icon} className="text-2xl" />
-            <a href="#" className="font-light md:text-xl text-wrap">
-              {item.text}
-            </a>
-          </div>
+            {item.text}
+          </a>
         ))}
       </div>
 
       {/* Second Column */}
       <div className="space-y-3">
         {contactCol2.map((item, index) => (
-          <div key={index} className="flex items-center gap-2 md:gap-4">
+          <a
+            key={index}
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 md:gap-4 font-light md:text-xl"
+          >
             <Icon icon={item.icon} className="text-2xl" />
-            <a href="#" className="font-light md:text-xl">
-              {item.text}
-            </a>
-          </div>
+            {item.text}
+          </a>
         ))}
       </div>
     </motion.section>

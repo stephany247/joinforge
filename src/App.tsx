@@ -9,15 +9,15 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className=" my-10 space-y-8 md:max-w-9/10 lg:max-w-6xl mx-auto">
+    <div className="mt-14 mb-10 space-y-8 md:max-w-9/10 lg:max-w-6xl mx-auto">
       <Header />
-{/* <StaggeredFade text="Staggered Fade" /> */}
-      
-      <Hero />
-      <Highlights />
-      <ForgeKids />
-      <WhyForge />
-      <Contact />
+      <main className="space-y-8">
+        <Hero />
+        <Highlights />
+        <ForgeKids />
+        <WhyForge />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

@@ -68,7 +68,7 @@ function Highlights() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="grid md:grid-cols-2 gap-6 md:gap-8 md:max-w-9/10"
+        className="grid sm:grid-cols-2 gap-6 md:gap-8 md:max-w-9/10"
       >
         {features.map((feature, index) => (
           <motion.li
@@ -80,7 +80,8 @@ function Highlights() {
             <motion.div
               initial={{ opacity: 0.4, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8 + index * 0.5, duration: 0.4 }} // fade after the text
+              transition={{ delay: 0.8 + index * 0.4, duration: 0.4 }} // fade after the text
+              viewport={{ once: true, amount: 0.2 }}
               className="bg-green p-3 rounded-lg text-white shrink-0"
             >
               <Icon

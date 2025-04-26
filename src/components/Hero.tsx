@@ -8,7 +8,7 @@ import FadeInText from "./FadeInText";
 function Hero() {
   return (
     <section className="px-6 flex flex-col items-center justify-center md:items-start lg:items-center gap-6 sm:gap-4 lg:text-center mx-auto lg:mx-8">
-      <FadeInText className="text-sm md:text-xl font-light text-center md:text-left md:-mb-16 lg:ml-10 w-8/10 sm:w-full">
+      <FadeInText className="relative z-10 text-sm md:text-xl font-light text-center md:text-left md:-mb-16 lg:ml-10 w-8/10 sm:w-full">
         Africa’s{" "}
         <span className="relative">
           martial arts{" "}
@@ -33,13 +33,11 @@ function Hero() {
         </span>{" "}
         fastest growing fitness Chain..
       </FadeInText>
-      <div className="space-y-4 relative z-10">
-        {/* <h1 className="font-etna text-[7rem] sm:text-[12rem] md:text-[14rem] lg:text-[20rem] tracking-[0.02em] lg:tracking-[0.04em] lg:py-6 lg:pt-2 mx-auto lg:text-center text-gradient-custom"> */}
+      <div className="space-y-4 relative z-0">
         <StaggeredFade
           text="FORGE"
-          className="font-etna text-[7rem] sm:text-[12rem] md:text-[14rem] lg:text-[20rem] tracking-[0.02em] lg:tracking-[0.04em] lg:py-6 lg:pt-2 -mt-8 md:-mt-12 md:-mb-4 lg:-mt-24 lg:-mb-16 mx-auto lg:text-center text-gradient-custom"
+          className="font-etna text-[7rem] sm:text-[12rem] md:text-[14rem lg:text-[20rem] whitespace-nowrap tracking-[0.02em] lg:tracking-[0.04em] lg:py-6 lg:pt-2 -mt-8 md:-mt-12 md:-mb-4 lg:-mt-24 lg:-mb-16 mx-auto lg:text-center text-gradient-custom"
         />
-        {/* </h1> */}
         <FadeInText className="sm:text-center md:text-left md:text-xl ml-1 lg:ml-2">
           24/7 Access Walk-in Fighting Gym <br />
           📍Lagos & Abuja
@@ -51,10 +49,10 @@ function Hero() {
         src={heroImage}
         alt="Boxer"
         className="rounded-2xl md:max-h-8/10"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
       />
     </section>
   );
