@@ -96,7 +96,7 @@ function Highlights() {
             </h4>
           </motion.li>
         ))}
-        <RadialGlow className="top-1/12 lg:top-2/12 left-1/2 -translate-1/2 md:left-0 md:-translate-1/5" />
+        <RadialGlow className="top-1/12 lg:top-2/12 left-1/2 -translate-1/2 md:left-0 xl:left-16 md:-translate-1/5" />
       </motion.ul>
       <Button className="md:mt-8" />
 

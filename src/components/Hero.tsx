@@ -7,8 +7,8 @@ import FadeInText from "./FadeInText";
 
 function Hero() {
   return (
-    <section className="px-6 flex flex-col items-center justify-center md:items-start lg:items-center gap-6 sm:gap-4 lg:text-center mx-auto lg:mx-8">
-      <FadeInText className="relative z-10 text-sm md:text-xl font-light text-center md:text-left md:-mb-16 lg:ml-10 w-8/10 sm:w-full">
+    <section className="relative px-6 flex flex-col items-center justify-center md:items-start lg:items-center xl:items-start gap-6 sm:gap-4 lg:text-center mx-auto lg:mx-8">
+      <FadeInText className="relative z-10 text-sm md:text-xl font-light text-center md:text-left md:-mb-16 lg:ml-10 xl:ml-2 w-8/10 sm:w-full">
         Africa’s{" "}
         <span className="relative">
           martial arts{" "}
@@ -36,15 +36,15 @@ function Hero() {
       <div className="space-y-4 relative z-0">
         <StaggeredFade
           text="FORGE"
-          className="font-etna text-[7rem] sm:text-[12rem] md:text-[14rem lg:text-[20rem] whitespace-nowrap tracking-[0.02em] lg:tracking-[0.04em] lg:py-6 lg:pt-2 -mt-8 md:-mt-12 md:-mb-4 lg:-mt-24 lg:-mb-16 mx-auto lg:text-center text-gradient-custom"
+          className="font-etna text-[7rem] sm:text-[12rem] md:text-[14rem lg:text-[20rem] whitespace-nowrap tracking-[0.02em] lg:tracking-[0.04em] lg:py-4 lg:pt-2 -mt-8 md:-mt-12 md:-mb-4 lg:-mt-24 lg:-mb-16 xl:-mt-12 xl:-mb-8 mx-auto lg:text-center text-gradient-custom"
         />
         <FadeInText className="sm:text-center md:text-left md:text-xl ml-1 lg:ml-2">
           24/7 Access Walk-in Fighting Gym <br />
           📍Lagos & Abuja
         </FadeInText>
       </div>
-      <Button className="my-6 lg:mb-8 md:mt-2 lg:self-start lg:ml-4" />
-      <RadialGlow className="top-2/6 sm:top-1/5 md:right-0" />
+      <Button className="my-6 lg:mb-8 md:mt-2 lg:self-start lg:ml-2" />
+      <RadialGlow className="top-1/6 sm:top-1/8 md:top-1/12 md:right-0" />
       <motion.img
         src={heroImage}
         alt="Boxer"

@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="mt-14 mb-10 space-y-8 md:max-w-9/10 lg:max-w-6xl mx-auto">
+    <div className="mt-14 mb-10 space-y-8 md:max-w-9/10 lg:max-w-6xl 2xl:max-w-[85rem] mx-auto">
       <Header />
       <main className="space-y-8">
         <Hero />
