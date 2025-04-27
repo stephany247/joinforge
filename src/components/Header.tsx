@@ -26,8 +26,8 @@ function Header() {
           target="_blank"
           rel="noopener noreferrer"
           title={`Visit our ${icon.split(":")[1]} page`}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 0.5}}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 0.5,
             delay: 1 + index * 0.2, // 1 second base delay, then stagger by 0.2s

@@ -43,7 +43,7 @@ function Hero() {
           📍Lagos & Abuja
         </FadeInText>
       </div>
-      <Button className="my-6 lg:mb-8 md:mt-2 lg:self-start lg:ml-6" />
+      <Button className="my-6 lg:mb-8 md:mt-2 lg:self-start lg:ml-4" />
       <RadialGlow className="top-2/6 sm:top-1/5 md:right-0" />
       <motion.img
         src={heroImage}
